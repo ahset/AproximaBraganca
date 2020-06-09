@@ -47,12 +47,13 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <TableLayout
                 android:id="@+id/tableVetores"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:shrinkColumns="*"
                 android:stretchColumns="*">
 
@@ -110,24 +111,19 @@
                         android:gravity="center"
                         />
                 </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableVetores2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
 
                 <TableRow
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_weight=".35">
-
-                    <ImageButton
-                        android:id="@+id/imageMapa"
-                        android:background="@null"
-                        android:layout_marginEnd="10dp"
-                        android:adjustViewBounds="true"
-                        android:scaleType="fitCenter"
-                        android:padding="5dp"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
-                        android:visibility="visible"
-                        android:contentDescription="Perfil"
-                        android:src="@drawable/location"/>
 
                     <ImageButton
                         android:id="@+id/imageAvaliacao"
@@ -142,6 +138,7 @@
                         android:src="@drawable/evaluation" />
                 </TableRow>
 
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -149,20 +146,13 @@
                     android:layout_marginBottom="40dp">
 
                     <Button
-                        android:text="Mapa"
-                        android:textSize="14sp"
-                        android:background="@null"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        />
-                    <Button
                         android:text="Avaliação"
                         android:textSize="14sp"
                         android:background="@null"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:gravity="center"
+                        android:layout_gravity="center"
                         />
                 </TableRow>
             </TableLayout>
