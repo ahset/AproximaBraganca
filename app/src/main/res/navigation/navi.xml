@@ -33,7 +33,14 @@
     <fragment
         android:id="@+id/estabelecimentoCliente"
         android:name="com.example.aproximabraganca.EstabelecimentoCliente"
-        android:label="EstabelecimentoCliente" />
+        android:label="EstabelecimentoCliente" >
+        <action
+            android:id="@+id/action_estabelecimentoCliente_to_chatCliente"
+            app:destination="@id/chatCliente" />
+        <action
+            android:id="@+id/action_estabelecimentoCliente_to_situacaoCliente"
+            app:destination="@id/situacaoCliente" />
+    </fragment>
     <fragment
         android:id="@+id/perfilCliente"
         android:name="com.example.aproximabraganca.PerfilCliente"
@@ -61,4 +68,16 @@
         android:id="@+id/perfilComercio"
         android:name="com.example.aproximabraganca.PerfilComercio"
         android:label="PerfilComercio" />
+    <fragment
+        android:id="@+id/chatCliente"
+        android:name="com.example.aproximabraganca.ChatCliente"
+        android:label="ChatCliente" />
+    <fragment
+        android:id="@+id/situacaoCliente"
+        android:name="com.example.aproximabraganca.SituacaoCliente"
+        android:label="SituacaoCliente" >
+        <action
+            android:id="@+id/action_situacaoCliente_to_dashboardCliente"
+            app:destination="@id/dashboardCliente" />
+    </fragment>
 </navigation>
