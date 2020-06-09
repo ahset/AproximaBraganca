@@ -30,7 +30,7 @@ class DashboardComercio : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
         view.findViewById<ImageButton>(R.id.imagePerfil).setOnClickListener(this)
-        view.findViewById<ImageButton>(R.id.imageEstabelecimento).setOnClickListener(this)
+        view.findViewById<ImageButton>(R.id.imageSituacao).setOnClickListener(this)
         view.findViewById<ImageButton>(R.id.imageAvaliacao).setOnClickListener(this)
         view.findViewById<ImageButton>(R.id.imageChat).setOnClickListener(this)
     }
