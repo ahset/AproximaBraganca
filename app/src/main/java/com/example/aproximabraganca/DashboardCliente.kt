@@ -5,11 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 
-class DashboardCliente : Fragment() {
+class DashboardCliente : Fragment(), View.OnClickListener {
 
     var navController: NavController? = null
 
@@ -28,10 +29,10 @@ class DashboardCliente : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
-        view.findViewById<Button>(R.id.imagePerfil).setOnClickListener(this)
+        view.findViewById<ImageButton>(R.id.imagePerfil).setOnClickListener(this)
     }
 
-    fun onClick(v: View?) {
+    override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.imagePerfil -> navController!!.navigate(R.id.action_dashboardCliente_to_perfilCliente)
         }
