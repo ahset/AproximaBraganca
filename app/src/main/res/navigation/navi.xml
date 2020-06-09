@@ -44,5 +44,12 @@
         <action
             android:id="@+id/action_login_to_dashboardCliente"
             app:destination="@id/dashboardCliente" />
+        <action
+            android:id="@+id/action_login_to_dashboardComercio"
+            app:destination="@id/dashboardComercio" />
     </fragment>
+    <fragment
+        android:id="@+id/dashboardComercio"
+        android:name="com.example.aproximabraganca.DashboardComercio"
+        android:label="DashboardComercio" />
 </navigation>
