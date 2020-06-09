@@ -136,7 +136,7 @@
                     android:id="@+id/txtLoginSenha"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Não esperarei na fila então. Obrigado."
+                    android:text="Não esperarei na fila então. Obrigada."
                     android:textSize="18sp"
                     android:layout_marginBottom="30dp"/>
 
