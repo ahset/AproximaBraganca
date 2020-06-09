@@ -7,7 +7,11 @@
     <fragment
         android:id="@+id/mapaCliente"
         android:name="com.example.aproximabraganca.MapaCliente"
-        android:label="MapaCliente" />
+        android:label="MapaCliente" >
+        <action
+            android:id="@+id/action_mapaCliente_to_estabelecimentoCliente"
+            app:destination="@id/estabelecimentoCliente" />
+    </fragment>
     <fragment
         android:id="@+id/dashboardCliente"
         android:name="com.example.aproximabraganca.DashboardCliente"
@@ -18,9 +22,6 @@
         <action
             android:id="@+id/action_dashboardCliente_to_mapaCliente"
             app:destination="@id/mapaCliente" />
-        <action
-            android:id="@+id/action_dashboardCliente_to_estabelecimentoCliente"
-            app:destination="@id/estabelecimentoCliente" />
         <action
             android:id="@+id/action_dashboardCliente_to_perfilCliente"
             app:destination="@id/perfilCliente" />

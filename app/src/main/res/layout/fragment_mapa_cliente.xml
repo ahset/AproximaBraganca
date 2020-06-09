@@ -61,8 +61,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="Filtrar por:"
-    android:layout_marginBottom="10dp"
-    android:layout_marginTop="50dp"/>
+    android:layout_marginBottom="10dp" />
 
                 <Spinner
                     android:id="@+id/diqueiroSpinnerDicas"
@@ -73,6 +72,18 @@
                     android:spinnerMode="dialog"
 
                     android:scrollbarSize="4dp" />
+
+                <Button
+                    android:id="@+id/btnEntrar"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/roundbutton"
+                    android:ems="11"
+                    android:text="Ver estabelecimento"
+                    android:layout_marginBottom="20dp"/>
 
 
 
