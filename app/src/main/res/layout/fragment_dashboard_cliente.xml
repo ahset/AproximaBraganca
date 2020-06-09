@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorMenu">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Manoel"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/logoUsuario"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:src="@drawable/people" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menuLayout">
+    <RelativeLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tableVetores"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:shrinkColumns="*"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight=".35">
+
+                    <ImageButton
+                        android:id="@+id/imagePerfil"
+                        android:background="@null"
+                        android:layout_marginEnd="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:visibility="visible"
+                        android:contentDescription="Perfil"
+                        android:src="@drawable/user"/>
+
+                    <ImageButton
+                        android:id="@+id/imageEstabelecimento"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:layout_marginStart="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:visibility="visible"
+                        android:src="@drawable/shop" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp">
+
+                    <Button
+                        android:text="Perfil"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        />
+                    <Button
+                        android:text="Estabelecimentos"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight=".35">
+
+                    <ImageButton
+                        android:id="@+id/imageMapa"
+                        android:background="@null"
+                        android:layout_marginEnd="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:padding="5dp"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:visibility="visible"
+                        android:contentDescription="Perfil"
+                        android:src="@drawable/location"/>
+
+                    <ImageButton
+                        android:id="@+id/imageAvaliacao"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:layout_marginStart="10dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:visibility="visible"
+                        android:src="@drawable/evaluation" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="40dp">
+
+                    <Button
+                        android:text="Mapa"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        />
+                    <Button
+                        android:text="Avaliação"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
