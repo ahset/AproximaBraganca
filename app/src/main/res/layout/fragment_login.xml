@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
-                    android:hint="manoelpereira@coldmail.com"
+                    android:hint="mariapereira@coldmail.com"
                     android:textColor="@android:color/black"
                     android:inputType="textPersonName"
                     android:textSize="16sp" />

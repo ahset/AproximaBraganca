@@ -2,4 +2,18 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/navi" />
+    android:id="@+id/navi"
+    app:startDestination="@id/login">
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.aproximabraganca.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_dashboardCliente"
+            app:destination="@id/dashboardCliente" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardCliente"
+        android:name="com.example.aproximabraganca.DashboardCliente"
+        android:label="DashboardCliente" />
+</navigation>
