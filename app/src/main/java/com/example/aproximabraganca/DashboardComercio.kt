@@ -30,15 +30,21 @@ class DashboardComercio : Fragment(), View.OnClickListener {
         super.onViewCreated(view, savedInstanceState)
         navController = Navigation.findNavController(view)
         view.findViewById<ImageButton>(R.id.imagePerfil).setOnClickListener(this)
+        view.findViewById<ImageButton>(R.id.imageEstabelecimento).setOnClickListener(this)
+        view.findViewById<ImageButton>(R.id.imageAvaliacao).setOnClickListener(this)
+        view.findViewById<ImageButton>(R.id.imageChat).setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.imagePerfil -> navController!!.navigate(R.id.action_dashboardComercio_to_perfilComercio)
+            R.id.imageSituacao -> navController!!.navigate(R.id.action_dashboardComercio_to_situacaoComercio)
+            R.id.imageAvaliacao -> navController!!.navigate(R.id.action_dashboardComercio_to_avaliacaoComercio)
+            R.id.imageChat -> navController!!.navigate(R.id.action_dashboardComercio_to_chatComercio)
         }
     }
 }
 
-private fun Button.setOnClickListener(dashboardCliente: DashboardCliente) {
+private fun Button.setOnClickListener(dashboardComercio: DashboardComercio) {
     TODO("Not yet implemented")
 }

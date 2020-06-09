@@ -56,9 +56,30 @@
         <action
             android:id="@+id/action_dashboardComercio_to_perfilComercio"
             app:destination="@id/perfilComercio" />
+        <action
+            android:id="@+id/action_dashboardComercio_to_avaliacaoComercio"
+            app:destination="@id/avaliacaoComercio" />
+        <action
+            android:id="@+id/action_dashboardComercio_to_chatComercio"
+            app:destination="@id/chatComercio" />
+        <action
+            android:id="@+id/action_dashboardComercio_to_situacaoComercio"
+            app:destination="@id/situacaoComercio" />
     </fragment>
     <fragment
         android:id="@+id/perfilComercio"
         android:name="com.example.aproximabraganca.PerfilComercio"
         android:label="PerfilComercio" />
+    <fragment
+        android:id="@+id/chatComercio"
+        android:name="com.example.aproximabraganca.ChatComercio"
+        android:label="ChatComercio" />
+    <fragment
+        android:id="@+id/situacaoComercio"
+        android:name="com.example.aproximabraganca.SituacaoComercio"
+        android:label="SituacaoComercio" />
+    <fragment
+        android:id="@+id/avaliacaoComercio"
+        android:name="com.example.aproximabraganca.AvaliacaoComercio"
+        android:label="AvaliacaoComercio" />
 </navigation>
