@@ -52,5 +52,13 @@
     <fragment
         android:id="@+id/dashboardComercio"
         android:name="com.example.aproximabraganca.DashboardComercio"
-        android:label="DashboardComercio" />
+        android:label="DashboardComercio" >
+        <action
+            android:id="@+id/action_dashboardComercio_to_perfilComercio"
+            app:destination="@id/perfilComercio" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilComercio"
+        android:name="com.example.aproximabraganca.PerfilComercio"
+        android:label="PerfilComercio" />
 </navigation>
