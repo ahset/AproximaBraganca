@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Chat: Manoel"
+            android:text="Chat: Maria"
             android:layout_alignParentStart="true"
             android:layout_marginStart="20dp"
             android:textColor="@android:color/white"
@@ -62,7 +62,7 @@
                         android:id="@+id/txtLoginNome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Manoel"
+                        android:text="Maria"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="center_vertical"
                         android:textSize="20sp" />
@@ -124,7 +124,7 @@
                         android:id="@+id/txtLoginNome"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Manoel"
+                        android:text="Maria"
                         android:layout_marginStart="20dp"
                         android:layout_gravity="center_vertical"
                         android:textSize="20sp" />
